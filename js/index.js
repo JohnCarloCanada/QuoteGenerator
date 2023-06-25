@@ -27,7 +27,11 @@ const generateQuote = async () => {
 generateQuote();
 
 tweet.addEventListener("click", () => {
-  window.open(`https://twitter.com/intent/tweet?text=${quote.innerHTML} - ${author.innerHTML}`, "Tweet Window", "width: 200px; height: 200px");
+  window.open(
+    `https://twitter.com/intent/tweet?text=${quote.innerHTML} - ${author.innerHTML}`,
+    "Tweet Window",
+    "width: 200px; height: 200px"
+  );
 });
 
 newQuote.addEventListener("click", generateQuote);
